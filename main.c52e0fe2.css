@@ -1,0 +1,412 @@
+/* bug fix */
+.navbar-fixed {
+  z-index: 9999;
+  position: absolute;
+}
+
+
+/* NAVBAR */
+
+
+/* nav color */
+header nav {
+  background-color: transparent !important;
+  box-shadow: none;
+}
+
+/* muda a cor da nav ao descer */
+.nav-down {
+  background-color: #2196f3 !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* padding */
+header nav {
+  padding-bottom: 30px;
+}
+
+/* ajusta o logo */
+.brand-logo {
+  line-height: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+  .brand-logo {
+    line-height: 70px;
+  }
+
+}
+
+/* aumenta a width dos dropdowns */
+.dropdown-content {
+  width: 250px !important;
+}
+
+/* dropdown redes sociais icons size */
+nav .dropdown-content i {
+  font-size: 40px;
+  color: #2196f3 !important;
+}
+
+/*  redes sociais dropmenu config */
+.dropdown-item span {
+  position: relative;
+  top: -10px;
+  left: +3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* carousel */
+
+.mask {
+  top: 0px;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #2196f3ea !important;
+}
+
+
+
+/* config */
+.carousel-img-config {
+  width: 100%;
+  height: 100vh;
+  /* min-height: 720px; */
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  background-image: url();
+}
+
+.carousel-zoom-animation {
+  animation-name: carouselZoom;
+  animation-duration: 15s;
+  animation-fill-mode: forwards;
+  /* animation-fill-mode: initial; */
+  animation-iteration-count: infinite;
+}
+
+@keyframes carouselZoom {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.5);
+  }
+}
+
+/* imagens */
+.carousel-img1 {
+  background-image: url(adult-band-concert-995301.feb81b57.jpg);
+}
+
+.carousel-img2 {
+  background-image: url(art-band-bass-1327430.a3339786.jpg)
+}
+
+.carousel-img3 {
+  background-image: url(audience-band-celebration-1652361.f5eee9be.jpg)
+}
+
+.carousel-img4 {
+  background-image: url(audio-bright-close-up-144429.b2b98cbf.jpg)
+}
+
+.carousel-img5 {
+  background-image: url(audio-dj-mix-63703.03fb04fb.jpg)
+}
+
+.carousel-img6 {
+  background-image: url(black-and-white-black-and-white-equipment-765139.55c6dda4.jpg)
+}
+
+.carousel-img7 {
+  background-image: url(black-and-white-blur-document-164821.1bf723a1.jpg)
+}
+
+.carousel-img8 {
+  background-image: url(bowed-stringed-instrument-brown-chord-1407322.8742c000.jpg)
+}
+
+.carousel-img9 {
+  background-image: url(brand-brass-chord-164743.07194f68.jpg)
+}
+
+.carousel-img10 {
+  background-image: url(chord-close-up-electric-guitar-96380.03e31fe0.jpg)
+}
+
+.carousel-img11 {
+  background-image: url(compose-entertainment-music-14548.8ff6d752.jpg)
+}
+
+.carousel-img12 {
+  background-image: url(e-guitar-electric-guitar-15919.e9a194f0.jpg)
+}
+
+.carousel-slogan {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+}
+.carousel-slogan img {
+  max-width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.wrap {
+  /*Ajuste a largura e altura desejadas aqui*/
+  width: 800px;
+  height: 300px;
+
+  /*isto fará o elemento video e o .container se adaptarem ao .wrap*/
+  position: relative;
+}
+
+.wrap > .bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /*apenas um -1 é necessário quando se trabalha com relative + absolute, sendo pai e filho*/
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* evita do video passar a altura desejada do .wrap */
+}
+.wrap > .bg-video > video {
+  width: 100%;
+}
+/* ---------------------------------- */
+/* owl carousel padding */
+/* ---------------------------------- */
+
+.owl-carousel .owl-item {
+    padding: 3px;
+}
+
+
+/* ---------------------------------- */
+/* duvidas */
+/* ---------------------------------- */
+
+/* label focus color */
+.input-field input:focus+label {
+    color: #7b1fa2 !important;
+}
+
+/* label underline focus color */
+.row .input-field input:focus {
+    border-bottom: 1px solid #7b1fa2 !important;
+    box-shadow: 0 1px 0 0 #7b1fa2 !important;
+}
+
+
+/* ---------------------------------- */
+/* nossos cursos (carousel) */
+/* ---------------------------------- */
+
+/* definir a cor dos links dos cards no carousel (era laranja) */
+.card a {
+    color: #7b1fa2 !important;
+}
+
+.card a:hover {
+    color: #ab47bc !important;
+}
+
+
+/* ---------------------------------- */
+/* Sobre a lemes artes */
+/* ---------------------------------- */
+
+/* arrumar background do collapsible (antes ficava com a cor background section */
+.collapsible {
+    background-color: white;
+}
+
+
+
+/* ---------------------------------- */
+/* parallax lemes artes em números */
+/* ---------------------------------- */
+
+
+.parallax {
+    width: 100%;
+    background-image: url(parallax.ae174a08.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.parallax .container,
+.parallax .row {
+    /* height: 100%; */
+    /* min-height: 500px; */
+}
+
+.parallax .col-md-4 {
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+/* cover */
+.parallax-cover {
+    width: 100%;
+    /* min-height: 500px; */
+    height: 100%;
+    background: #00000088;
+    padding: 50px 0;
+}
+
+/* parallax item */
+.parallax-item {
+    margin-top: 25px;
+    border: 1px solid white;
+    text-align: center;
+    padding: 25px 0px;
+    background-color: rgba(131, 131, 131, 0.712);
+}
+
+.parallax-item i {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.parallax-item h5 {
+    font-weight: 900;
+    font-size: 33px;
+    margin-bottom: 30px;
+}
+
+.parallax-item p {
+    color: rgb(219, 219, 219);
+}
+
+
+
+
+/* ---------------------------------- */
+/* Por que lemes artes? */
+/* ---------------------------------- */
+
+.vantagens .col {
+    box-sizing: border-box;
+}
+
+
+
+/* ---------------------------------- */
+/* depoimentos */
+/* ---------------------------------- */
+
+/* img */
+.depoimento-img img {
+    border-radius: 100% !important;
+    width: 150px !important;
+    margin-top: 30px;
+    border: 5px solid #ffffff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* texto */
+.depoimento p {
+    font-style: italic;
+    text-align: justify;
+}
+
+/* titulo */
+.depoimento h5 {
+    font-weight: 700;
+}
+.depoimento h6 {
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* redes sociais */
+.depoimento ul {
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.depoimento ul a {
+    font-size: 30px;
+    color: rgb(255, 255, 255) !important;
+    margin: 0px 5px;
+}
+.depoimento ul a:hover {
+    color: rgb(201, 201, 201) !important;
+}
+.footer-redes i{
+    font-size: 45px;
+}
+.footer-fale i {
+    font-size: 25px !important;
+    position: relative;
+    top: 4px;
+}
+.footer-fale ul li {
+    margin-bottom: 10px;
+}
+footer, footer a {
+    color: #FFFFFF !important;
+}
+footer a:hover {
+    color: #eeeeee  !important;
+}
+
+/* configurar o sass depois */
+/* primary color : #1e88e5 */
+/* secondary color : #7b1fa2 */
+
+/* ---------------------------------- */
+/* materialize config */
+/* ---------------------------------- */
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+.dropdown-content li>a {
+    color: #1e88e5;
+}
+
+.dropdown-content li>span {
+    color: #7b1fa2;
+}
+
+
+/* ---------------------------------- */
+/* classes */
+/* ---------------------------------- */
+.gray-bg {
+    background-color: #eeeeee;
+}
+
+.word-break-break {
+    word-break: break-all;
+}
+
+
+/*# sourceMappingURL=main.c52e0fe2.css.map */
